@@ -3,60 +3,113 @@
 
 /* Give the Header element a background color */
 
-
+header {
+  background-color: pink;
+}
 /* Center Everything in Header  and footer */
-
+header, footer {
+  text-align: center;
+}
 
 /* All Text to Helvetica */
-
+body {
+  font-family: Helvetica;
+}
 
 /* All links colors gray*/
-
+a {
+  color: gray;
+}
 
 /* All links hover color red*/
-
+a:hover {
+  color: red;
+}
 
 /* All Links Visted Color black*/
-
+a:visited {
+  color: black;
+}
 
 /*Footer Disclaimer Text to be .5 em*/
-
+footer p#disclaimer {
+  font-size: .5em;
+}
 
 /* Remove Bullet Points from Header Navigation Links */
-
+header nav ul {
+  list-style: none;
+}
 
 /* All Post's Comment Links Italicized, Orange and Remove the Underline */
-
+a[href="#comments"] {
+  font-style: italic;
+  color: orange;
+  text-decoration: none;
+}
 
 /* All Post's Comment Links Show Underline on Hover */
-
+a[href="#comments"]:hover {
+  text-decoration: underline;
+}
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
+main article h3 a {
+  color: blue;
+  font-weight: bold;
+}
 
+main article p a:first-of-type {
+  color: blue;
+  font-weight: bold;
+}
 
 /* Article Paragraph Text should have line height of 200%*/
-
+main article p {
+  line-heigh: 200%
+}
 
 /* The First Letter of each Article be 2em */
 
+article::first-letter {
+  font-size: 2em;
+}
 
 /* The First Image in every Article should have Rounded Corners*/
-
+article img:first-of-type {
+  border-radius: 50px;
+}
 
 /* The Top-Most Top Cat Should have a Golden Background */
 
+aside#top-cats section:first-of-type {
+  background-color: gold;
+}
 
 /* The 2nd-Most Top Cat Should have a Silver/gray Background */
 
+aside#top-cats section:nth-of-type(2) {
+  background-color: gray;
+}
 
 /* The 3rd-Most Top Cat Should have a Bronze/brown Background */
-
+aside#top-cats + section {
+  background-color: brown;
+}
 
 /* Every other Article's Post-Content Background Color to a Light Grey */
+/*article section.post-content:nth-of-type(odd) {
+  background-color: LightGray;
+}*/
 
+article:nth-child(odd){
+  background-color: LightGray;
+}
 
 /* All Top Kitten's Profile Photos Rounded */
-
+aside #top-cats img {
+  border-radius: 50px;
+}
 
 /*** BONUS ***/
 
